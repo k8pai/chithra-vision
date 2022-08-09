@@ -1,0 +1,231 @@
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    transition: 1s;
+	position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+    background: rgba(249, 249, 249, 0.2);
+    /* opacity: .4; */
+    height: fit-content;
+    z-index: 999;
+    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+	transition: all 300ms ease-in-out;
+}
+.nav-section{
+    width: 100%;
+    height: fit-content;
+}
+.scroll-down header {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+    position: fixed;
+    background-color: black;
+    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+}
+.scroll-up header ul li a{
+    color: white;
+}
+.scroll-up header ul li a:after{
+    background-color: white;
+}
+
+
+.menu-is-open {
+    overflow: hidden;
+}
+
+.menu-is-open header {
+    filter: none;
+}
+
+.navigation{
+    z-index: 9999;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navigation ul li{
+    padding: 20px 20px;
+    font-size: 20px;
+}
+.navigation ul li a{
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    height: fit-content;
+    letter-spacing: 1px;
+    padding: 3px 0px;
+    /* font to be declared */
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /* border-bottom: 3px solid black; */
+}
+.navigation ul li a img{
+    height: 3vh;
+    /* width: 10vw; */
+}
+.navigation ul li a:after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform-origin: center;
+    transform: translateX(-50%);
+    bottom: -3px;
+    transition: .3s;
+}
+
+.navigation ul li a:hover:after{
+    width: 110%;
+}
+
+.content-section{
+    width: 100%;
+    height: 100%;
+}
+
+.first-div{
+    /* background-image: url('img/_DEEP06140.jpg'); */
+    background-image: url('img/_DEEP06319.jpg');
+    /* background-image: url('img/_DEEP06389.jpg'); */
+    /* background-image: url('img/_DEEP05408.jpg'); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.second-div{
+    padding: 100px 0px;
+    height: fit-content;
+}
+
+.second-content{
+    padding: 60px 0px;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.second-content .left-image-sec{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: .7s;
+    opacity: 0.5;
+    transform: translateX(-100px);
+}
+.second-content.inview .left-image-sec{
+    opacity: 1;
+    transform: translateX(0);
+}
+.second-content .left-image-sec img{
+    height: 50%;
+    width: 50%;
+}
+.second-content .right-text-sec{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+    text-align: justify;
+    transition: .7s;
+    opacity: 0.5;
+    transform: translateX(100px);
+    /* text-align-last: center; */
+}
+.second-content.inview .right-text-sec{
+    opacity: 1;
+    transform: translateX(0);
+}
+.second-content .right-image-sec{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: .7s;
+    opacity: 0.5;
+    transform: translateX(100px);
+}
+.second-content.inview .right-image-sec{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.second-content .right-image-sec img{
+    height: 50%;
+    width: 50%;
+}
+.second-content .left-text-sec{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+    text-align: justify;
+    transition: .7s;
+    opacity: 0.5;
+    transform: translateX(-100px);
+    /* text-align-last: center; */
+}
+.second-content.inview .left-text-sec{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.third-div{
+    height: 100vh;
+}
+.fourth-div{
+    height: 100vh;
+}
+.fifth-div{
+    height: 100vh;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    height: 40vh;
+    background-color: black;
+}
+.footer-design{
+    position: relative;
+    left: 0;
+    bottom: 100%;
+}
+.footer-design svg{
+    position: relative;
+    bottom: -5px;
+}
+.footer-div{
+    position: absolute;
+    height: 100%;
+}
