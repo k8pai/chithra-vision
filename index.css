@@ -9,6 +9,7 @@ body{
     padding: 0;
     height: 100vh; 
     width: 100vw;
+    background-color: rgb(215,215,215, 0.7);
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -200,7 +201,6 @@ header{
     transform: translateX(0);
 }
 
-
 .third-div{
     height: 100vh;
 }
@@ -212,9 +212,8 @@ header{
 }
 footer{
     position: relative;
-    bottom: 0;
-    height: 40vh;
-    background-color: black;
+    height: 60vh;
+    /* background-color: rgba(0, 0, 0, 1); */
 }
 .footer-design{
     position: relative;
@@ -227,5 +226,283 @@ footer{
 }
 .footer-div{
     position: absolute;
+    bottom: 0;
+    height: 1fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top-sec{
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-top-sec .footer-logo-sec{
+    height: 15vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.footer-top-sec .footer-logo-sec .before-logo{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+.footer-top-sec .footer-logo-sec .after-logo{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+.footer-top-sec .footer-logo-sec img{
+    height: 100%;
+    flex: 1;
+    padding: 0px 50px;
+}
+.footer-top-sec .sitemap{
+    /* background-color: aqua; */
+    user-select: none;
+    height: 30%;
+    width: 75%;
+}
+.footer-top-sec .sitemap ul{
+    list-style: none;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+}
+.footer-top-sec .sitemap ul li{
+    padding: 10px 75px;
+    text-align: justify;
+
+}
+.footer-top-sec .sitemap ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.footer-top-sec .sitemap ul li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform-origin: center;
+    transform: translateX(-50%);
+    bottom: -9px;
+    transition: .2s;
+}
+
+.footer-top-sec .sitemap ul li a:hover:after{
+    width: 110%;
+}
+
+.footer-top-sec .socials{
+    user-select: none;
+    display: flex;
+    height: 30%;
+    width: 100%;
+    background-color: #313131;
+
+}
+.footer-top-sec .socials .teams{
+    width: 100%;
     height: 100%;
 }
+.footer-top-sec .socials .social-links{
+    width: 100%;
+    padding: 10px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.footer-top-sec .socials .social-links img.logo{
+    width: 5vh;
+}
+
+.footer-top-sec .socials .social-links h5{
+    color: white;
+    padding: 20px 25px;
+    flex: 1;
+}
+.footer-top-sec .social-links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-top-sec .social-links ul li{
+    padding: 10px 15px;
+    text-align: justify;
+}
+
+.footer-top-sec .social-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.footer-top-sec .social-links ul li a img{
+    height: auto;
+    width: 35px;
+}
+
+
+
+.footer-bottom-sec{
+    height: 40vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.footer-bottom-sec .footer-logo-sec{
+    height: 5vh;
+    text-align: center;
+    width: fit-content;
+    padding: 0px 50px;
+}
+.footer-bottom-sec .footer-logo-sec img{
+    height: 100%;
+}
+.footer-bottom-sec .footer-span{
+    flex: 1;
+}
+.footer-bottom-sec .footer-content-sec{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-bottom-sec .footer-content-sec ul{
+    list-style: none;
+    padding: 30px 50px;
+    float: center;
+}
+.footer-bottom-sec .footer-content-sec ul li{
+    padding: 10px;
+    position: relative;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+.footer-bottom-sec .footer-content-sec ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.footer-bottom-sec .footer-content-sec ul li a::after{
+    content: "";
+    transition: .2s;
+    height: 60%;
+    width: 5px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -20px;
+    top: 20%;
+    background-color: white;
+}
+.footer-bottom-sec .footer-content-sec ul li a::before{
+    content: "";
+    transition: .2s;
+    height: 60%;
+    width: 0px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -15px;
+    top: 20%;
+}
+.footer-bottom-sec .footer-content-sec ul li a:hover::after{
+    height: 80%;
+    top: 10%;
+}
+.footer-bottom-sec .footer-content-sec ul li a:hover::before{
+    width: 120%;
+    height: 70%;
+    top: 15%;
+    background-color: rgba(250, 250, 250, 0.2);
+}
+
+
+.footer-bottom-sec .sitemap{
+    background-color: black;
+}
+
+.footer-bottom-sec .social-links ul{
+    list-style: none;
+    padding: 10px 15px;
+    display: flex;
+}
+.footer-bottom-sec .social-links ul li{
+    padding: 10px;
+    text-align: justify;
+}
+
+.footer-bottom-sec .social-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.footer-bottom-sec .social-links ul li a img{
+    height: auto;
+    width: 35px;
+}
+.footer-bottom-sec .footer-links-sec{
+    width: fit-content;
+    height: 80%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    background-color: black;
+    text-align: center;
+}
+.footer-bottom-sec .footer-links-sec h2{
+    color: white;
+    text-align: center;
+}
+.footer-bottom-sec .footer-links-sec ul{
+    list-style: none;
+    padding: 30px 50px;
+    display: flex;
+}
+.footer-bottom-sec .footer-links-sec ul li{
+    padding: 10px;
+    text-align: justify;
+}
+.footer-bottom-sec .footer-links-sec ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.footer-bottom-sec .footer-links-sec ul li a img{
+    height: auto;
+    width: 35px;
+}
+
+
