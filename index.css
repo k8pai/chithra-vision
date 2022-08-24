@@ -80,16 +80,10 @@ header{
     height: fit-content;
     letter-spacing: 1px;
     padding: 3px 0px;
-    /* font to be declared */
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    /* border-bottom: 3px solid black; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navigation ul li a img{
     height: 3vh;
-    /* width: 10vw; */
 }
 .navigation ul li a:after{
     content: "";
@@ -114,10 +108,7 @@ header{
 }
 
 .first-div{
-    /* background-image: url('img/_DEEP06140.jpg'); */
     background-image: url('img/_DEEP06319.jpg');
-    /* background-image: url('img/_DEEP06389.jpg'); */
-    /* background-image: url('img/_DEEP05408.jpg'); */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -165,7 +156,7 @@ header{
     transform: translateX(100px);
 }
 .second-content.inview .right-text-sec{
-    /* opacity: 1; */
+    opacity: 1;
     transform: translateX(0);
 }
 .second-content .right-image-sec{
@@ -175,7 +166,7 @@ header{
     justify-content: center;
     transition: .5s;
     opacity: 1;
-    /* transform: translateX(100px); */
+    transform: translateX(100px);
 }
 .second-content.inview .right-image-sec{
     opacity: 1;
@@ -195,7 +186,7 @@ header{
     text-align: justify;
     transition: .5s;
     opacity: 1;
-    /* transform: translateX(-100px); */
+    transform: translateX(-100px);
 }
 .second-content.inview .left-text-sec{
     opacity: 1;
@@ -214,7 +205,6 @@ header{
 footer{
     position: relative;
     height: 60vh;
-    /* background-color: rgba(0, 0, 0, 1); */
 }
 .footer-design{
     position: relative;
@@ -269,7 +259,6 @@ footer{
     padding: 0px 50px;
 }
 .footer-top-sec .sitemap{
-    /* background-color: aqua; */
     user-select: none;
     height: 30%;
     width: 75%;
