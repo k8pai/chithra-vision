@@ -1,17 +1,14 @@
-// import InstagramIcon from '@mui/icons-material/Instagram';
 
-// const cont = document.querySelector(".main-section");
 let lastScroll = 0;
-// console.log(cont);
 addEventListener("load", () => {
 	console.log('loaded');
+	// setTimeout(() => {
+		// document.querySelector('.container').classList.remove('hide');
+	// }, 1000);
 });
-
 window.addEventListener("scroll", () => {
     const cont = document.querySelector(".main-section");
     const currentScroll = window.pageYOffset;
-    // console.log("current scroll = "+currentScroll);                                                                  
-    // console.log("last scroll = "+lastScroll);
 	if (currentScroll > lastScroll) {
 		cont.classList.add("scroll-down");
 		cont.classList.remove("scroll-up");
@@ -24,9 +21,4 @@ window.addEventListener("scroll", () => {
 		cont.classList.remove("scroll-up");
 	}
 	lastScroll = currentScroll;
-    // console.log("last scroll = "+lastScroll);
-	
 });
-
-
-// contentAnimtations();
