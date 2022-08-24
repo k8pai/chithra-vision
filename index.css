@@ -138,7 +138,7 @@ header{
     height: 100%;
     display: flex;
     justify-content: center;
-    transition: .7s;
+    transition: .5s;
     opacity: 0.5;
     transform: translateX(-100px);
 }
@@ -157,10 +157,9 @@ header{
     height: 100%;
     padding: 30px;
     text-align: justify;
-    transition: .7s;
+    transition: .5s;
     opacity: 0.5;
     transform: translateX(100px);
-    /* text-align-last: center; */
 }
 .second-content.inview .right-text-sec{
     opacity: 1;
@@ -171,7 +170,7 @@ header{
     height: 100%;
     display: flex;
     justify-content: center;
-    transition: .7s;
+    transition: .5s;
     opacity: 0.5;
     transform: translateX(100px);
 }
@@ -191,10 +190,9 @@ header{
     height: 100%;
     padding: 30px;
     text-align: justify;
-    transition: .7s;
+    transition: .5s;
     opacity: 0.5;
     transform: translateX(-100px);
-    /* text-align-last: center; */
 }
 .second-content.inview .left-text-sec{
     opacity: 1;
@@ -227,7 +225,7 @@ footer{
 .footer-div{
     position: absolute;
     bottom: 0;
-    height: 1fit-content;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -305,6 +303,7 @@ footer{
     transition: .2s;
 }
 
+
 .footer-top-sec .sitemap ul li a:hover:after{
     width: 110%;
 }
@@ -344,7 +343,7 @@ footer{
     justify-content: center;
 }
 .footer-top-sec .social-links ul li{
-    padding: 10px 15px;
+    padding: 10px;
     text-align: justify;
 }
 
@@ -353,11 +352,38 @@ footer{
     color: white;
     font-size: large;
     font-weight: 500;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
 }
 .footer-top-sec .social-links ul li a img{
     height: auto;
     width: 35px;
+}
+
+.footer-top-sec .social-links ul li a svg{
+    width: 25px;
+    height: 25px;
+    transition: all .2s ease-in-out;
+}
+.footer-top-sec .social-links ul li a svg:hover{
+    /* color: #1DA1F2; */
+    transform: scale(1.3);
+}
+
+svg:hover.twittersvg{
+    transition: .1s;
+    color: #1DA1F2;
+}
+svg:hover.instagramsvg{
+    transition: .1s;
+    color: #E4405F;
+}
+svg:hover.facebooksvg{
+    transition: .1s;
+    color: #1877F2;
+}
+svg:hover.whatsappsvg{
+    transition: .1s;
+    color: #25D366;
 }
 
 
